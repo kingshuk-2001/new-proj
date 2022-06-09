@@ -1,0 +1,41 @@
+.logout-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 100px;
+}
+
+.logout-cont h1 {
+  margin: 50px;
+  font-size: 3rem;
+}
+
+.logout-cont button {
+  border: none;
+  padding: 5px 20px 5px 20px;
+  background-color: #1a375c;
+}
+
+.logout-cont button .link {
+  font-size: large;
+  color: white;
+}
+
+.logout-cont button:hover {
+  background-color: #62d9dd;
+}
+
+.logout-cont button:hover .link {
+  color: black;
+}
+/*# sourceMappingURL=logout.css.map */

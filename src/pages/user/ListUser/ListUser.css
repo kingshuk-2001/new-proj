@@ -1,0 +1,17 @@
+.list-cont {
+  padding: 10%;
+  margin: 10px;
+}
+
+.list-item {
+  font-size: 2rem;
+}
+
+.list-item .pic {
+  color: #1a375c;
+}
+
+.list-item button {
+  border: 3px solid;
+}
+/*# sourceMappingURL=ListUser.css.map */

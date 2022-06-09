@@ -1,0 +1,11 @@
+button {
+  color: white;
+  background-color: #1a375c;
+  margin-left: 50px;
+}
+
+button:hover {
+  color: black;
+  background-color: #62d9dd;
+}
+/*# sourceMappingURL=signup.css.map */

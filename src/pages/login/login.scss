@@ -1,0 +1,62 @@
+body{
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.login-page-class {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    h1{
+        font-size: 3rem;
+    }
+    .login-fileds {
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+
+    .submit-button {
+        background-color: #1a375c;
+        width: 80px;
+    }
+
+    .signup-button {
+        background-color: #1a375c;
+        width: 80px;
+    }
+
+    .submit-button:hover{
+        color: black ;
+        background-color:  rgb(98, 217, 221);
+    }
+
+    .signup-button:hover {
+        color: black ;
+        background-color:  rgb(98, 217, 221);
+    }
+
+    .button-style {
+        display: flex;
+        justify-content: center;
+        width: 70%;
+    }
+    .login-form-data{
+        margin: 80px 50px 10px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        p{
+            width: 200px;
+            color: #1a375c;
+            margin-left: 180px;
+        }
+    }
+}

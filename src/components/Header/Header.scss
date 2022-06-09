@@ -1,0 +1,30 @@
+.headof{
+    background-color: #1a375c;
+    .head-cont{
+        background-color: #1a375c;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        .first{
+            background-color: #1a375c;
+            display: flex;
+            .item{
+                color: white;
+                .link{
+                    color: white;
+                }
+            }
+        }
+        button{
+            height: 40px;
+            width: 60px;
+            margin-top: 5px;
+        }
+        .logout{
+            color: white;
+            .logout-link{
+                color: white;
+            }
+        }
+    }
+}
