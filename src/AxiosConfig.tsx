@@ -6,8 +6,8 @@ import { useNavigate } from 'react-router';
 const navigate = useNavigate();
 const axiosInstance = axios.create({
     baseURL: process.env.NODE_ENV === "production" ?
-        "" :
-        ""
+        "http://localhost:4000/userDetails" :
+        "http://localhost:4000/userDetails"
 });
 
 axiosInstance.interceptors.request.use(function (config) {

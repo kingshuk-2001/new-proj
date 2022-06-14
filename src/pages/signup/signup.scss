@@ -7,3 +7,9 @@ button:hover{
     color: black;
     background-color: rgb(98, 217, 221);
 }
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

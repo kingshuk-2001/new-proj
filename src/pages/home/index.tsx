@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react'
 import axios from 'axios';
 import { Outlet } from 'react-router-dom';
-import Header from '../../components/Header/Header';
 import LoginContext from '../../context/LoginContext';
+import Navbar from '../../components/Header/Navbar/Navbar';
 
 export const HomePage: React.FC<any> = () => {
 
@@ -23,7 +23,7 @@ export const HomePage: React.FC<any> = () => {
     
     return (
         <div>
-            <Header />
+            <Navbar/>
             
             <Outlet />
         </div>

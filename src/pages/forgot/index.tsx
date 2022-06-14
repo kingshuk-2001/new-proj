@@ -4,6 +4,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { hydrateRoot } from 'react-dom/client'
 import { Link } from 'react-router-dom'
+import { getCall } from '../../services/apiServies'
 import "./forgot.css"
 
 const Forgot = () => {
@@ -21,6 +22,8 @@ const Forgot = () => {
     let users: any = []
     //get users from json using axios
     useEffect(() => {
+        
+        
         axios
             .get('http://localhost:4000/userDetails')
             .then(response => {
@@ -35,7 +38,11 @@ const Forgot = () => {
         setisfound(true)
         console.log(hu);
         setsaveuser(hu)
+        
     }
+
+    // const r = getCall("get","");
+    //     console.log(r);
 
     //on  new password submit
     const setNewPass = async (values: any) => {

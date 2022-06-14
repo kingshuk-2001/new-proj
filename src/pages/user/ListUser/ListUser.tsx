@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { List, Avatar, Button, Skeleton } from 'antd';
+import { List, Avatar, Button, Skeleton, Spin } from 'antd';
 import "./ListUser.css"
 import VirtualList from 'rc-virtual-list';
 import { UserOutlined, DeleteFilled } from '@ant-design/icons';
@@ -56,7 +56,7 @@ const ListUser: React.FC = () => {
   return (
     <>
       {loading ? (
-        <h2>Loading</h2>
+        <Spin />
       ) : (
         <List>
           <VirtualList
@@ -75,7 +75,7 @@ const ListUser: React.FC = () => {
                   title={<h3>{item?.username}</h3>}
                   description={<h4>{item?.email}</h4>}
                 />
-                <button onClick={del}><DeleteFilled></DeleteFilled></button>
+                <button  onClick={del}><DeleteFilled></DeleteFilled></button>
               </List.Item>
             )}
           </VirtualList>
