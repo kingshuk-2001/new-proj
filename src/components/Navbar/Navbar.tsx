@@ -6,8 +6,8 @@ import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import { NavbarData } from './NavbarData';
 import Submenu from './Submenu';
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
-import { ClickAwayListener } from '@mui/material';
-
+import { Avatar, Badge} from '@mui/material';
+import NotificationsIcon from '@mui/icons-material/Notifications';
 
 const Nav = styled.div`
 background: #7F7FD5;  /* fallback for old browsers */
@@ -28,6 +28,11 @@ display: flex;
 justify-content: flex-start;
 align-items: center;
 color : #003060;
+&:hover{
+  color : #003060;
+  // transform : rotateY(180deg);
+  // transition : all 0.5s ease;
+}
 `;
 
 const SidebarNav = styled.nav<{ sidebar: boolean }>`
@@ -50,6 +55,17 @@ z-index: 10;
 const SidebarWrap = styled.div`
 width: 100%;
 `;
+const BadgeCon = styled.div`
+  margin-right  :40px;
+  margin-top : 10px;
+`;
+
+const NavEnd = styled.div`
+  cursor : pointer;
+  display: flex;
+  justify-content : center;
+  align-items : center;
+`;
 
 
 const Navbar = () => {
@@ -70,20 +86,29 @@ const Navbar = () => {
         <NavIcon to='#'>
           <MenuRoundedIcon onClick={showSidebar} />
         </NavIcon>
-        <NavIcon to='/logout'>
-          <LogoutRoundedIcon  />
-        </NavIcon>
+        <NavEnd>
+          <BadgeCon>
+            <Badge badgeContent={4} color="primary">
+              <NotificationsIcon color="action" />
+            </Badge>
+          </BadgeCon>
+          <Avatar alt="Remy Sharp" src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png" />
+          <NavIcon to='/logout'>
+            <LogoutRoundedIcon />
+          </NavIcon>
+        </NavEnd>
+
       </Nav>
-        <SidebarNav sidebar={sidebar}>
-          <SidebarWrap >
-            <NavIcon to='#'>
-              <CloseRoundedIcon onClick={showSidebar} />
-            </NavIcon>
-            {NavbarData.map((item, index) => {
-              return <Submenu item={item} key={index} subtog={subtog} />
-            })}
-          </SidebarWrap>
-        </SidebarNav>
+      <SidebarNav sidebar={sidebar}>
+        <SidebarWrap >
+          <NavIcon to='#'>
+            <CloseRoundedIcon onClick={showSidebar} />
+          </NavIcon>
+          {NavbarData.map((item, index) => {
+            return <Submenu item={item} key={index} subtog={subtog} />
+          })}
+        </SidebarWrap>
+      </SidebarNav>
     </div>
   )
 }
