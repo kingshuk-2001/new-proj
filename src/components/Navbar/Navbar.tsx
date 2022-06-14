@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
@@ -6,6 +6,7 @@ import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import { NavbarData } from './NavbarData';
 import Submenu from './Submenu';
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
+import { ClickAwayListener } from '@mui/material';
 
 
 const Nav = styled.div`
@@ -26,7 +27,7 @@ height: 80px;
 display: flex;
 justify-content: flex-start;
 align-items: center;
-color : white;
+color : #003060;
 `;
 
 const SidebarNav = styled.nav<{ sidebar: boolean }>`
@@ -53,9 +54,15 @@ width: 100%;
 
 const Navbar = () => {
 
+  // useEffect(()=>{
+
+  // },[])
+
   const [sidebar, setsidebar] = useState(false)
 
   const showSidebar = () => setsidebar(!sidebar)
+
+  const subtog = () => setsidebar(!sidebar)
 
   return (
     <div>
@@ -67,16 +74,16 @@ const Navbar = () => {
           <LogoutRoundedIcon  />
         </NavIcon>
       </Nav>
-      <SidebarNav sidebar={sidebar}>
-        <SidebarWrap >
-          <NavIcon to='#'>
-            <CloseRoundedIcon onClick={showSidebar} />
-          </NavIcon>
-          {NavbarData.map((item, index) => {
-            return <Submenu item={item} key={index} showSidebar={showSidebar} />
-          })}
-        </SidebarWrap>
-      </SidebarNav>
+        <SidebarNav sidebar={sidebar}>
+          <SidebarWrap >
+            <NavIcon to='#'>
+              <CloseRoundedIcon onClick={showSidebar} />
+            </NavIcon>
+            {NavbarData.map((item, index) => {
+              return <Submenu item={item} key={index} subtog={subtog} />
+            })}
+          </SidebarWrap>
+        </SidebarNav>
     </div>
   )
 }

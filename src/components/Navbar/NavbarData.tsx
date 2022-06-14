@@ -58,5 +58,5 @@ export const NavbarData = [
     icon : <SettingsRoundedIcon/>,
     iconClosed: <ArrowDropDownRoundedIcon/>,
     iconOpen : <ArrowDropUpRoundedIcon/>
-  },
+  }
 ]

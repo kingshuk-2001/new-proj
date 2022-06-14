@@ -9,6 +9,9 @@ import GuardedRoute from "./routeGuard";
 import SignUp from "../pages/signup";
 import Forgot from "../pages/forgot";
 import NotAllowed from "../pages/notallowed";
+import path from "path";
+import Products from "../pages/Products/Products";
+import Settings from "../pages/Settings";
 
 
 //central routing page 
@@ -38,6 +41,18 @@ const AppRoutes = () => {
                     {
                         path: "/dashboard",
                         element: <GuardedRoute allowedRoles={['super-admin', 'admin', 'visitor']}><DashboardPage /></GuardedRoute>
+                    },
+                    {
+                        path: "/about",
+                        element: <GuardedRoute allowedRoles={['super-admin', 'admin']}><AboutPage /></GuardedRoute>
+                    },
+                    {
+                        path: "/products",
+                        element: <GuardedRoute allowedRoles={['super-admin', 'admin']}><Products /></GuardedRoute>,
+                    },
+                    {
+                        path: "/settings",
+                        element: <GuardedRoute allowedRoles={['super-admin', 'admin']}><Settings /></GuardedRoute>,
                     },
                     {
                         path: "/about",

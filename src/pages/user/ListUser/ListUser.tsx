@@ -72,8 +72,8 @@ const ListUser: React.FC = () => {
                 <List.Item.Meta
                   className='list-item'
                   avatar={<Avatar className='pic' size={64} icon={<UserOutlined />} />}
-                  title={<h3>{item?.username}</h3>}
-                  description={<h4>{item?.email}</h4>}
+                  title={<span>{item?.username}</span>}
+                  description={<span>{item?.email}</span>}
                 />
                 <button  onClick={del}><DeleteFilled></DeleteFilled></button>
               </List.Item>

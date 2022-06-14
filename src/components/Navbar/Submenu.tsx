@@ -5,7 +5,7 @@ import { isTemplateExpression } from 'typescript';
 
 const SidebarLink = styled(Link)`
   display: flex;
-  color: black;
+  color: #003060;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
@@ -19,7 +19,7 @@ const SidebarLink = styled(Link)`
     background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-left: 4px solid #632ce4;
     cursor: pointer;
-    color : black;
+    color : #003060;
   }
 `;
 
@@ -36,14 +36,14 @@ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: black;
+  color: #003060;
   font-size: 18px;
   &:hover {
     background: #7F7FD5;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     cursor: pointer;
-    color: black;
+    color: #003060;
   }
 `;
 
@@ -80,7 +80,7 @@ const Submenu = (props: any) => {
             {subnav &&
                 props.item.subNav.map((item:any, index:any) => {
                     return (
-                        <DropdownLink to={item.path} key={index} >
+                        <DropdownLink to={item.path} key={index} onClick={props.subtog}>
                             {item.icon}
                             <SidebarLabel>{item.title}</SidebarLabel>
                         </DropdownLink>
@@ -89,6 +89,6 @@ const Submenu = (props: any) => {
         </>
     )
 }
-
+// onClick={props.setsidebar(!props.sidebar)}
 
 export default Submenu

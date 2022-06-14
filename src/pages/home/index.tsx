@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import axios from 'axios';
 import { Outlet } from 'react-router-dom';
 import LoginContext from '../../context/LoginContext';
-import Navbar from '../../components/Header/Navbar/Navbar';
+import Navbar from '../../components/Navbar/Navbar';
 
 export const HomePage: React.FC<any> = () => {
 
@@ -24,7 +24,6 @@ export const HomePage: React.FC<any> = () => {
     return (
         <div>
             <Navbar/>
-            
             <Outlet />
         </div>
     )
