@@ -47,6 +47,14 @@
       "email": "abc@c.com",
       "age": "33",
       "id": 10
+    },
+    {
+      "username": "pratik",
+      "password": "Codewalla",
+      "role": "super-admin",
+      "email": "e@b.com",
+      "age": "45",
+      "id": 11
     }
   ]
 }

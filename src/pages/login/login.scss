@@ -23,23 +23,25 @@ body{
    
 
     .submit-button {
-        background-color: #1a375c;
+        border: none;
+        background-color: #7f5aaa;
         width: 80px;
     }
-
+ 
     .signup-button {
-        background-color: #1a375c;
+        border: none;
+        background-color: #7f5aaa;
         width: 80px;
     }
 
     .submit-button:hover{
         color: black ;
-        background-color:  rgb(98, 217, 221);
+        background-color:  rgb(206, 186, 243);
     }
 
     .signup-button:hover {
         color: black ;
-        background-color:  rgb(98, 217, 221);
+        background-color: rgb(206, 186, 243);
     }
 
     .button-style {

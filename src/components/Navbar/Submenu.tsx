@@ -5,7 +5,7 @@ import { isTemplateExpression } from 'typescript';
 
 const SidebarLink = styled(Link)`
   display: flex;
-  color: #003060;
+  color: #52446d;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
@@ -33,7 +33,7 @@ const DropdownLink = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #003060;
+  color: #52446d;
   font-size: 15px;
   &:hover {
     background : #e2e9f7;

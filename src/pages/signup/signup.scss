@@ -1,11 +1,14 @@
 button{
+    background-color: #7f5aaa;
     color: white;
-    background-image: #6f61b5;
     margin-left: 50px;
 }
+
+
 button:hover{
+    background-color:rgb(206, 186, 243);
     color: black;
-    background-color: #6f61b5;
+    
 }
 .form{
     display: flex;
@@ -13,4 +16,12 @@ button:hover{
     justify-content: center;
     align-items: center;
     margin-top: 80px;
+}
+
+.btn{
+    border:none;
+    background-color: #7f5aaa;
+    &:hover{
+        background-color:rgb(206, 186, 243);
+    }
 }

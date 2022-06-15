@@ -37,23 +37,25 @@ body {
 }
 
 .login-page-class .submit-button {
-  background-color: #1a375c;
+  border: none;
+  background-color: #7f5aaa;
   width: 80px;
 }
 
 .login-page-class .signup-button {
-  background-color: #1a375c;
+  border: none;
+  background-color: #7f5aaa;
   width: 80px;
 }
 
 .login-page-class .submit-button:hover {
   color: black;
-  background-color: #62d9dd;
+  background-color: #cebaf3;
 }
 
 .login-page-class .signup-button:hover {
   color: black;
-  background-color: #62d9dd;
+  background-color: #cebaf3;
 }
 
 .login-page-class .button-style {

@@ -24,9 +24,9 @@ height: 80px;
 display: flex;
 justify-content: flex-start;
 align-items: center;
-color : #003060;
+color : #52446d;
 &:hover{
-  color : #003060;
+  color : #52446d;
   // transform : rotateY(180deg);
   // transition : all 0.5s ease;
 }
@@ -51,7 +51,12 @@ z-index: 10;
 const SidebarWrap = styled.div`
 width: 100%;
 `;
+const AvatarCont = styled.div`
+  border : 2px solid #003060;
+  border-radius : 50%;
+`;
 const BadgeCon = styled.div`
+  color : #003060;
   margin-right  :40px;
   margin-top : 10px;
 `;
@@ -84,11 +89,11 @@ const Navbar = () => {
         </NavIcon>
         <NavEnd>
           <BadgeCon>
-            <Badge badgeContent={4} color="primary">
-              <NotificationsIcon color="action" />
+            <Badge badgeContent={4} color="secondary">
+              <NotificationsIcon  />
             </Badge>
           </BadgeCon>
-          <Avatar alt="Remy Sharp" src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png" />
+          <AvatarCont><Avatar alt="Remy Sharp" src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png" /></AvatarCont>
           <NavIcon to='/logout'>
             <LogoutRoundedIcon />
           </NavIcon>

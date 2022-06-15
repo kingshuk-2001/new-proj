@@ -23,7 +23,7 @@
 .logout-cont button {
   border: none;
   padding: 5px 20px 5px 20px;
-  background-color: #1a375c;
+  background-color: #7f5aaa;
 }
 
 .logout-cont button .link {
@@ -32,7 +32,7 @@
 }
 
 .logout-cont button:hover {
-  background-color: #62d9dd;
+  background-color: #cebaf3;
 }
 
 .logout-cont button:hover .link {

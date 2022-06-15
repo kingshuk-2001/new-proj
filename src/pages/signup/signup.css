@@ -1,12 +1,12 @@
 button {
+  background-color: #7f5aaa;
   color: white;
-  background-image: #6f61b5;
   margin-left: 50px;
 }
 
 button:hover {
+  background-color: #cebaf3;
   color: black;
-  background-color: #6f61b5;
 }
 
 .form {
@@ -24,5 +24,14 @@ button:hover {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 80px;
+}
+
+.btn {
+  border: none;
+  background-color: #7f5aaa;
+}
+
+.btn:hover {
+  background-color: #cebaf3;
 }
 /*# sourceMappingURL=signup.css.map */

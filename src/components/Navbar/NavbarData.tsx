@@ -13,6 +13,20 @@ import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
 
 export const NavbarData = [
   {
+    title : 'DashBoard',
+    path : '/dashBoard',
+    icon : <DashboardRoundedIcon/>,
+    iconClosed: <ArrowDropDownRoundedIcon/>,
+    iconOpen : <ArrowDropUpRoundedIcon/>
+  },
+  {
+    title : 'About',
+    path : '/about',
+    icon : <InfoRoundedIcon/>,
+    iconClosed: <ArrowDropDownRoundedIcon/>,
+    iconOpen : <ArrowDropUpRoundedIcon/>
+  },
+  {
     title : 'users',
     path : '/users',
     icon : <PersonRoundedIcon/>,
@@ -30,20 +44,6 @@ export const NavbarData = [
         icon : <PersonAddAltRoundedIcon/>
       }
     ]
-  },
-  {
-    title : 'About',
-    path : '/about',
-    icon : <InfoRoundedIcon/>,
-    iconClosed: <ArrowDropDownRoundedIcon/>,
-    iconOpen : <ArrowDropUpRoundedIcon/>
-  },
-  {
-    title : 'DashBoard',
-    path : '/dashBoard',
-    icon : <DashboardRoundedIcon/>,
-    iconClosed: <ArrowDropDownRoundedIcon/>,
-    iconOpen : <ArrowDropUpRoundedIcon/>
   },
   {
     title : 'Products',
