@@ -9,14 +9,14 @@ import './products.css'
 
 const Product = () => {
     return (
-        <div>
+        <div className='product'>
             <Card sx={{ maxWidth: 345 }}>
             <CardActionArea className='card-cont'>
                 <CardMedia
                     className='card-img'
                     component="img"
                     height="140"
-                    image="https://cdn.thewirecutter.com/wp-content/media/2021/08/budget-android-phone-2048px-nord-front.jpg"
+                    image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRab9jYyUD3-xkM1QG_oPBDTQ_GTgcqKb6_ow&usqp=CAU"
                     alt="green iguana"
                 />
                 <CardContent className='card'>

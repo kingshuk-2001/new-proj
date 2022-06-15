@@ -5,8 +5,11 @@ import './products.css'
 const Products = () => {
   return (
     <div className='products'>
-        <Product/>
-        <Product/>
+      <h1>Products</h1>
+        <div className='prod'>
+          <Product/>
+          <Product/>
+        </div>
     </div>
   )
 }

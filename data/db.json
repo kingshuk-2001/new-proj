@@ -1,22 +1,6 @@
 {
   "userDetails": [
     {
-      "id": 3,
-      "username": "gaurav",
-      "password": "abc123",
-      "role": "visitor",
-      "email": "gaurav@c.com",
-      "age": 26
-    },
-    {
-      "id": 4,
-      "username": "sushant",
-      "password": "abc123",
-      "role": "super-admin",
-      "email": "sushant@c.com",
-      "age": 25
-    },
-    {
       "username": "rahul",
       "password": "fa",
       "role": "super-admin",
@@ -31,14 +15,6 @@
       "email": "u2@c.com",
       "age": "34",
       "id": 8
-    },
-    {
-      "username": "pratik",
-      "password": "Codewalla",
-      "role": "admin",
-      "email": "p@c.com",
-      "age": "34",
-      "id": 9
     },
     {
       "username": "user1",

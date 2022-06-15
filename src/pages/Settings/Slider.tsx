@@ -13,7 +13,7 @@ export default function ValSlider() {
         aria-label="Temperature"
         defaultValue={30}
         getAriaValueText={valuetext}
-        color="secondary"
+        sx={{color:'#6e56db'}}
       />
     </Box>
   );

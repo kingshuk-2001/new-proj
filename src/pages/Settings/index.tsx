@@ -43,18 +43,18 @@ const Settings = () => {
       </div>
       <div className='check'>
         <Checkbox {...label}
-          color="secondary"
+          sx={{color:'#6e56db'}}
           icon={<FavoriteBorder />}
           checkedIcon={<Favorite />} />
         <Checkbox
           {...label}
-          color="secondary" 
+          sx={{color:'#6e56db'}} 
           icon={<BookmarkBorderIcon />}
           checkedIcon={<BookmarkIcon />}
         />
       </div>
       <div className="set-btn">
-        <ButtonGroup variant="text" color="secondary" aria-label="text button group">
+        <ButtonGroup variant="text" sx={{color:'#6e56db'}} aria-label="text button group">
           <Button>One</Button>
           <Button>Two</Button>
           <Button>Three</Button>
@@ -64,9 +64,9 @@ const Settings = () => {
       <SpeedDial
         FabProps={{
           sx: {
-            bgcolor: 'secondary.main',
+            bgcolor: '#6e56db;',
             '&:hover': {
-              bgcolor: 'secondary.main',
+              bgcolor: '#6e56db;',
             }
           }
         }}

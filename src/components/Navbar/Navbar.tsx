@@ -51,7 +51,7 @@ z-index: 10;
 const SidebarWrap = styled.div`
 width: 100%;
 `;
-const AvatarCont = styled.div`
+const AvatarCont = styled(Link)`
   border : 2px solid #003060;
   border-radius : 50%;
 `;
@@ -93,7 +93,7 @@ const Navbar = () => {
               <NotificationsIcon  />
             </Badge>
           </BadgeCon>
-          <AvatarCont><Avatar alt="Remy Sharp" src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png" /></AvatarCont>
+          <AvatarCont to='./profile'><Avatar alt="Remy Sharp" src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png" /></AvatarCont>
           <NavIcon to='/logout'>
             <LogoutRoundedIcon />
           </NavIcon>

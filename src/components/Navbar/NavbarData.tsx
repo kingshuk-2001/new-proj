@@ -9,7 +9,7 @@ import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
 import LocalMallRoundedIcon from '@mui/icons-material/LocalMallRounded';
 import DashboardRoundedIcon from '@mui/icons-material/DashboardRounded';
 import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
-
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
 
 export const NavbarData = [
   {
@@ -56,6 +56,13 @@ export const NavbarData = [
     title : 'Settings',
     path : '/settings',
     icon : <SettingsRoundedIcon/>,
+    iconClosed: <ArrowDropDownRoundedIcon/>,
+    iconOpen : <ArrowDropUpRoundedIcon/>
+  },
+  {
+    title : 'Profile',
+    path : '/profile',
+    icon : <AccountBoxIcon/>,
     iconClosed: <ArrowDropDownRoundedIcon/>,
     iconOpen : <ArrowDropUpRoundedIcon/>
   }

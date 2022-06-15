@@ -12,6 +12,7 @@ import NotAllowed from "../pages/notallowed";
 import path from "path";
 import Products from "../pages/Products/Products";
 import Settings from "../pages/Settings";
+import Profile from "../pages/profile";
 
 
 //central routing page 
@@ -44,28 +45,31 @@ const AppRoutes = () => {
                     },
                     {
                         path: "/about",
-                        element: <GuardedRoute allowedRoles={['super-admin', 'admin']}><AboutPage /></GuardedRoute>
+                        element: <GuardedRoute allowedRoles={['super-admin', 'admin', 'visitor']}><AboutPage /></GuardedRoute>
                     },
                     {
                         path: "/products",
-                        element: <GuardedRoute allowedRoles={['super-admin', 'admin']}><Products /></GuardedRoute>,
+                        element: <GuardedRoute allowedRoles={['super-admin', 'admin', 'visitor']}><Products /></GuardedRoute>,
                     },
                     {
                         path: "/settings",
-                        element: <GuardedRoute allowedRoles={['super-admin', 'admin']}><Settings /></GuardedRoute>,
+                        element: <GuardedRoute allowedRoles={['super-admin']}><Settings /></GuardedRoute>,
+                    },
+                    {
+                        path: "/profile",
+                        element: <GuardedRoute allowedRoles={['super-admin', 'admin', 'visitor']}><Profile /></GuardedRoute>,
                     },
                     {
                         path: "/about",
-                        element: <GuardedRoute allowedRoles={['super-admin', 'admin']}><AboutPage /></GuardedRoute>
+                        element: <GuardedRoute allowedRoles={['super-admin', 'admin', 'visitor']}><AboutPage /></GuardedRoute>
                     },
 
                     {
                         path: "/users", 
-                        // element: <GuardedRoute allowedRoles={["super-admin", 'admin']}><NotAllowed /></GuardedRoute>,
                         children:[
                             {
                                 path: "list",
-                                element: <GuardedRoute allowedRoles={['super-admin', 'admin', 'visitor']}><ListUser /></GuardedRoute>
+                                element: <GuardedRoute allowedRoles={['super-admin', 'admin']}><ListUser /></GuardedRoute>
                             },
                             {
                                 path: "add",

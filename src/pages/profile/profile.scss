@@ -1,0 +1,33 @@
+h1{
+    margin-top: -40px;
+}
+.sub-paper{
+    display: flex;
+    height: 120px;
+    border-radius: 2%;
+    margin :30px;
+    background-color:#e2e9f7;
+    .age{
+        color: white;
+        background-color: #6e56db;
+        height: 25px;
+        min-width: 25px;
+        border-radius: 50%;
+        margin: 20px;
+        font-weight: 600;
+        span{
+            margin-top: 10px;
+        }
+    }
+    .info{
+        margin: 30px;
+    }
+    
+}
+.icons{
+    color: #6e56db;
+    &>*{
+        cursor: pointer;
+        margin: 30px;
+    }
+}

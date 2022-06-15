@@ -1,5 +1,6 @@
 .products{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -9,4 +10,10 @@
 
 .card-cont:hover{
     background-color:  #e2e9f7;
+}
+.prod{
+    display: flex;
+}
+.product{
+    margin: 30px;
 }
