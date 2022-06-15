@@ -6,14 +6,11 @@ import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import { NavbarData } from './NavbarData';
 import Submenu from './Submenu';
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
-import { Avatar, Badge} from '@mui/material';
+import { Avatar, Badge } from '@mui/material';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 
 const Nav = styled.div`
-background: #7F7FD5;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-height: 80px;
+
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -36,10 +33,9 @@ color : #003060;
 `;
 
 const SidebarNav = styled.nav<{ sidebar: boolean }>`
-background: #7F7FD5;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-width: 250px;
+border-right : 2px solid #003060;
+width : 250px;
+background : white;
 height: 100vh;
 display: flex;
 justify-content: center;

@@ -12,11 +12,9 @@ const SidebarLink = styled(Link)`
   list-style: none;
   height: 60px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   &:hover {
-    background: #7F7FD5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background : #e2e9f7;
     border-left: 4px solid #632ce4;
     cursor: pointer;
     color : #003060;
@@ -24,24 +22,22 @@ const SidebarLink = styled(Link)`
 `;
 
 const SidebarLabel = styled.span`
+  padding-bottom : 1px;
   margin-left: 16px;
 `;
 
 const DropdownLink = styled(Link)`
-background: #7F7FD5;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 60px;
+  background : white;
+  height : 50px;
   padding-left: 3rem;
   display: flex;
   align-items: center;
   text-decoration: none;
   color: #003060;
-  font-size: 18px;
+  font-size: 15px;
   &:hover {
-    background: #7F7FD5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background : #e2e9f7;
+    border-left: 4px solid #632ce4;
     cursor: pointer;
     color: #003060;
   }

@@ -1,15 +1,16 @@
 button{
     color: white;
-    background-color: #1a375c;
-    margin-left: 50px ;
+    background-image: #6f61b5;
+    margin-left: 50px;
 }
 button:hover{
     color: black;
-    background-color: rgb(98, 217, 221);
+    background-color: #6f61b5;
 }
 .form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
 }

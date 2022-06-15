@@ -4,19 +4,22 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
+import './products.css'
+
 
 const Product = () => {
     return (
         <div>
             <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea>
+            <CardActionArea className='card-cont'>
                 <CardMedia
+                    className='card-img'
                     component="img"
                     height="140"
                     image="https://cdn.thewirecutter.com/wp-content/media/2021/08/budget-android-phone-2048px-nord-front.jpg"
                     alt="green iguana"
                 />
-                <CardContent>
+                <CardContent className='card'>
                     <Typography gutterBottom variant="h5" component="div">
                         Phone
                     </Typography>
